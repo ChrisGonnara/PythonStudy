@@ -1,0 +1,1 @@
+#1 aulas inicias, Fundamentos, e um pouco de funções
