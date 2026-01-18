@@ -1,4 +1,4 @@
-# 🚀 Jornada Python - Engenharia de Software
+# 🚀 Estudos de Python
 
 Repositório para registrar minha evolução no Python, focado em algoritmos e lógica.
 
