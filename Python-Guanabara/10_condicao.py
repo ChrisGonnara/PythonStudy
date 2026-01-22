@@ -26,14 +26,21 @@ def pratico2():
         print('A sua media foi ruim! ESTUDE MAIS!')
 
 def ex28():
-    import random 
-    lista= [0,1,2,3,4,5]
-    pensado= random.choice(lista)
-    n=int(input('tente 1 numero de 0 a 5: '))
-    if n == pensado:
-        print(f'Venceu!, acertou o numero {n}!')
+    from random import randint
+    from time import sleep 
+    comp=randint(0,5)
+    print('-=-' * 20)
+    print('Pensando em 1 numero de 0 a 5. tente adivinhar...')
+    print('-=-'*20)
+    
+    jogador=int(input('em que numero pensei? '))
+    print('processando... ')
+    sleep(2)
+
+    if jogador == comp:
+        print('Parabéns! voce conseguiu me vencer!')
     else:
-        print(f'ERROU! tentativa: {n}, era: {pensado}')
+        print(f'GANHEI! Eu pensei no numero {comp} e nao no {jogador}!')
 
 def ex29():
     vel=int(input('Digite a velocidade que estava: '))
@@ -58,7 +65,7 @@ def ex31():
         valor=0.50*dis
     else:
         valor=0.45*dis
-    print(f'Valor da viagem de {dis}km foi: {valor}')
+    print(f'Valor da viagem de {dis}km foi: {valor:.2f}')
 
 def ex32():
     ano=int(input('Ano pra ver se é bissexto: '))

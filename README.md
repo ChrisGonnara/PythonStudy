@@ -13,15 +13,21 @@ Repositório para registrar minha evolução no Python, focado em algoritmos e l
 | **Aula 07** | Operadores Aritméticos | Cálculos, Raiz Quadrada, Descontos e Taxas |
 | **Aula 08** | Bibliotecas (Modules) | `math` (hypot, trunc) e `random` (choice, shuffle) |
 | **Aula 09** | Manipulação de Texto | `split`, `join`, `strip`, fatiamento `[:]` e índices |
+| **Aula 10** | Condições (Simples/Compostas) | `if`, `else`, Operadores Lógicos e Validação |
 
 ---
 
 ### 🧠 Notas de Estudo
 
-#### Aula 09 - Strings (Onde estou agora)
-* **Análise:** `len()` para tamanho, `count()` para frequência e `find()` para busca.
-* **Transformação:** `upper()`, `lower()`, `capitalize()` e `replace()`.
-* **Fatiamento:** Entendi que o índice `[-1]` acessa o último item da lista/string, e o fatiamento `[0:5]` exclui o último índice da contagem.
-* **Lógica:** O uso de `//` e `%` para isolar dígitos de números sem quebrar o código (melhor que string).
+#### Aula 10 - Condições ✅
+* **Conceitos:** `if`, `else`, Operadores Lógicos (`and`, `or`).
+* **Aplicações:** Validação de triângulos, cálculo de bissextos e paridade.
+* **Técnica:** Otimização de busca (Maior/Menor) via atribuição inicial.
+
+#### Aula 09 - Strings ✅
+* **Manipulação:** `len`, `count`, `find`, `split`, `join`.
+* **Formatação:** `upper`, `lower`, `replace`.
+* **Slicing:** Índices `[start:stop:step]` com limite final exclusivo.
+* **Operadores:** Decomposição numérica via **divisão inteira (`//`)** e **resto (`%`)**.
 
 ---
