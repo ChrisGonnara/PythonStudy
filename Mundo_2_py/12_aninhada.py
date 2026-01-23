@@ -121,15 +121,80 @@ def ex43():
     peso=float(input('Digite seu peso: '))
     altura=float(input('Digite sua altura: '))
     imc= peso / (altura ** 2) #altura ao quadrado
+    print(f' O IMC da pessoa é {imc:.1f}')
 
     if imc <=18.5:
-        print(f'{imc:.1f}, ABAIXO DO PESO')
+        print(', ABAIXO DO PESO')
     elif imc <= 25:
-        print(f'{imc:.1f}, PESO IDEAL')
+        print(', PESO IDEAL')
     elif imc <= 30:
-        print(f'{imc:.1f}, SOBREPESO')
+        print(', SOBREPESO')
     elif imc <= 40:
-        print(f'{imc:.1f} OBESIDADE')
+        print(' OBESIDADE')
     else:
-        print(f'{imc:.1f}OBESIDADE MÓRBIDA')
-ex43()
+        print('OBESIDADE MÓRBIDA')
+
+def ex44():
+    preco=float(input('preço do produto: '))
+    print('''FORMAS DE PAGAMENTO
+    [ 1 ] à vista dinheiro/cheque
+    [ 2 ] à vista cartão
+    [ 3 ] 2x no cartão
+    [ 4 ] 3x ou mais no cartão''')
+    tipo=int(input('Escolha como vai pagar: '))
+    if tipo == 1:
+        pago = preco * 0.90
+    elif tipo == 2:
+        pago = preco * 0.95
+    elif tipo == 3:
+        pago = preco
+        parcela= pago /2
+        print(f'parcelada em 2x de R${parcela:.2f} SEM JUROS')
+    elif tipo == 4:
+        pago= preco *1.2
+        totparc=int(input('Quantas parcelas? '))
+        parcela = pago / totparc
+        print(f'parcelado em {totparc}x de R${parcela:.2f} COM JUROS')
+
+    else:
+        pago=preco
+        print('opcao invalida,tente novamente!')
+    print(f'Sua compra de R${preco} vai custar {pago:.2f} no final')
+
+
+
+def ex45():
+    from random import randint
+    from time import sleep
+
+    itens = ('Pedra', 'Papel', 'Tesoura')
+    pc=randint(0,2)
+
+    print('[0] Pedra\n[1] Papel\n[2] Tesoura')
+    jogador = int(input('Sua jogada: '))
+
+    if jogador not in (0, 1, 2):
+        print('JOGADA INVÁLIDA!')
+        return # Para a função aqui mesmo
+
+    print('JO... KEN... PÔ!')
+    sleep(1)
+
+    print('-='*11)
+    print(f'Computador jogou {itens[pc]}')
+    print(f'Jogador jogou {itens[jogador]}')
+    print('-='*11)
+
+    if pc == jogador:
+        res='EMPATE'
+    elif ((jogador == 0 and pc == 2) or
+        (jogador == 1 and pc == 0) or
+        (jogador == 2 and pc == 1)):
+        res='VOCE VENCEU!'
+    else:
+        res='Computador venceu!'
+
+    print(f'Resultado: {res}\n')
+
+        
+ex45()
