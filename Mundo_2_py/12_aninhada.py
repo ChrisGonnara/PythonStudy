@@ -1,4 +1,7 @@
 '''Condiçoes aninhadas''' #uma coisa dentro da outra, ninho
+from datetime import date
+
+
 def pratica():
     nome=str(input('Qual seu nome? '))
     if nome == 'Christiano':
@@ -57,4 +60,76 @@ def ex38():
     else:
         print(f'Nao existe valor maior, os 2 sao iguais, {n1}')
 
-ex38()
+def ex39():
+    atual=date.today().year
+
+    nasc=int(input('Ano de nascimento: '))
+    idade=atual-nasc
+    if idade == 18:
+        print('Voce tem que se alistar IMEDIATAMENTE!')
+    elif idade < 18:
+        saldo=18-idade
+        print(f'Ainda faltam {saldo} anos para o alistamento')
+        ano=atual+saldo
+        print(f'Seu alistamento será em {ano}')
+    else:
+        saldo = idade -18
+        saldo= idade-18
+        print(f'Ja passou {saldo} anos do seu alistamento.')
+
+def ex40():
+    n1=float(input('NOTA 1: '))
+    n2=float(input('NOTA 2: '))
+    m=(n1+n2)/2
+    if m <5.0:
+        print(f'REPROVADO! {m}')
+    elif m >=5.0 and m <=6.9:
+        print(f'RECUPERAÇÃO! {m}')
+    else:
+        print(f'PARABÉNS! APROVADO! {m}')
+
+def ex41():
+    atual=date.today().year
+    nasc=int(input('Ano de nascimento: '))
+    idade=atual-nasc
+    if idade <=9:
+        print(f'{idade} anos, Categoria MIRIM')
+    elif idade <=14:
+        print(f'{idade} anos, Categoria INFANTIL')
+    elif idade <=19:
+        print(f'{idade} anos, Categoria JUNIOR')
+    elif idade<=25:
+        print(f'{idade} anos, categoria SENIOR')
+    else:
+        print(f'{idade} anos, Categoria MASTER')
+
+def ex42():
+    a=int(input('Lado A: '))
+    b=int(input('Lado B: '))
+    c=int(input('Lado C: '))
+
+    if a < b+c and b < a+c and c <a+b:
+        print('Forma um triangulo ', end='')
+        if a == b == c: #LADOS IGUAIS
+            print('EQUILÁTERO.')
+        elif a!=b!=c!=a: #LADOS DIFERENTES
+            print('ESCALENO.')    
+        else: #2 LADOS IGUAIS, 1 DIFERENTE
+            print('ISÓSCELES.')
+
+def ex43():
+    peso=float(input('Digite seu peso: '))
+    altura=float(input('Digite sua altura: '))
+    imc= peso / (altura ** 2) #altura ao quadrado
+
+    if imc <=18.5:
+        print(f'{imc:.1f}, ABAIXO DO PESO')
+    elif imc <= 25:
+        print(f'{imc:.1f}, PESO IDEAL')
+    elif imc <= 30:
+        print(f'{imc:.1f}, SOBREPESO')
+    elif imc <= 40:
+        print(f'{imc:.1f} OBESIDADE')
+    else:
+        print(f'{imc:.1f}OBESIDADE MÓRBIDA')
+ex43()
