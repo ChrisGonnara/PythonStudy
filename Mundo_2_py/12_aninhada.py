@@ -29,4 +29,32 @@ def ex36():
     else:
         print('emprestimo NEGADO!')
 
-ex36()
+def ex37():
+    n=int(input('Digite um numero: '))
+    print('''Escolha uma das bases de conversão:
+        [1] Converter para binário
+        [2]Converter para octal
+        [3]Converter para hexadecimal''')
+    opcao=int(input('Sua opcao: '))
+    if opcao == 1:
+        print(f'{n} -> para binario = {bin(n)[2:]}')
+    elif opcao ==2:
+        print(f'{n} -> para octal= {oct(n)[2:]}')
+    elif opcao ==3:
+        print(f'{n} -> para hexadecimal = {hex(n)[2:]}')
+    else:
+        print(f'Opcao invalida.Tente novamente')
+          
+    
+def ex38():
+    n1=int(input('Digite o 1 numero: '))
+    n2=int(input('Digite o 2 numero: '))
+
+    if n1 > n2:
+        print(f'O primeiro valor{n1} é maior que {n2}')
+    elif n1 < n2:
+        print(f'O Segundo valor {n2} é maior que {n1}')
+    else:
+        print(f'Nao existe valor maior, os 2 sao iguais, {n1}')
+
+ex38()
