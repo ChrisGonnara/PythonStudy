@@ -46,4 +46,62 @@ def ex48():
 
     print('os numeros impar de 1 a 500, mult de 3')
     print(f'Soma desses {cont} numeros = {soma}')
-ex48()
+
+def ex49():
+    n=int(input('Digite um numero pra tabuada: '))
+    for c in range (1,11):
+        print(f'{n} x {c:2} = {n*c}')
+
+def ex50():
+    soma=0
+    cont = 0
+    for c in range (1,7):
+        n=int(input(f'Digite o {c} numero: '))
+        if n % 2 == 0:
+            soma += n
+            cont +=1
+    print(f'teve {cont} PARES')
+    print(f'e a soma foi {soma}')
+
+def ex51():
+    pi=int(input('1 termo: '))
+    razao=int(input('Razão: '))
+    total=int(input('Quantos termos voce quer? '))
+
+    pf = pi + (total-1) * razao
+
+    for c in range (pi,pf+razao,razao):
+        print(f'{c}', end= ' -> ')
+
+    print('Acabou!')
+
+def ex52():
+    num=int(input('Digite um numero: '))
+    cont=0
+    for c in range (1,num+1):
+        num % c == 0
+        cont+=1
+    print(f'O {num} foi disivel {cont} vezes')
+    if cont == 2:
+        print(f'{num}, é primo')
+    else:
+        print(f'Não é primo')
+
+def ex53():
+    frase=str(input('Digite uma frase: ')).strip().upper()
+    palavras=frase.split()
+    junto= ''.join(palavras)
+    # Ele inicializa a variável vazia para receber as letras
+    inverso=''
+    
+    # O FOR invertido: começa na última letra,
+    # vai até a primeira, voltando de 1 em 1
+    for letra in range (len(junto)-1,-1,-1):
+        inverso+=junto[letra]
+
+    print(f'O inverso de {junto} é {inverso}')
+    if inverso == junto:
+        print('Temos um PALÍNDROMO!')
+    else:
+        print('A frase digitada não é um palíndromo')
+ex53()
