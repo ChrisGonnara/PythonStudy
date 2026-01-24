@@ -1,33 +1,27 @@
-# 🚀 Estudos de Python
+# 🐍 Prática de Python
 
-Repositório para registrar minha evolução no Python, focado em algoritmos e lógica.
-
----
-
-### 📂 Estrutura de Aprendizado (Prática)
-
-| Aula (Curso) | Conteúdo Principal | Destaques Técnicos |
-| :--- | :--- | :--- |
-| **Aula 05** | Fundamentos e `def` | Instalação, Sintaxe e funções iniciais |
-| **Aula 06** | Variáveis e Tipos | `int`, `float`, `bool`, `str` e tipos primitivos |
-| **Aula 07** | Operadores Aritméticos | Cálculos, Raiz Quadrada, Descontos e Taxas |
-| **Aula 08** | Bibliotecas (Modules) | `math` (hypot, trunc) e `random` (choice, shuffle) |
-| **Aula 09** | Manipulação de Texto | `split`, `join`, `strip`, fatiamento `[:]` e índices |
-| **Aula 10** | Condições (Simples/Compostas) | `if`, `else`, Operadores Lógicos e Validação |
+Repositório focado no domínio da linguagem Python, evoluindo do básico até a lógica avançada.
 
 ---
 
-### 🧠 Notas de Estudo
+### 📂 Progresso por Módulo
 
-#### Aula 10 - Condições ✅
-* **Conceitos:** `if`, `else`, Operadores Lógicos (`and`, `or`).
-* **Aplicações:** Validação de triângulos, cálculo de bissextos e paridade.
-* **Técnica:** Otimização de busca (Maior/Menor) via atribuição inicial.
-
-#### Aula 09 - Strings ✅
-* **Manipulação:** `len`, `count`, `find`, `split`, `join`.
-* **Formatação:** `upper`, `lower`, `replace`.
-* **Slicing:** Índices `[start:stop:step]` com limite final exclusivo.
-* **Operadores:** Decomposição numérica via **divisão inteira (`//`)** e **resto (`%`)**.
+* **[Mundo 1 - Fundamentos](./Mundo_1):** Primeiros passos com variáveis, operadores e condições simples.
+* **[Mundo 2 - Estruturas de Controle](./Mundo_2):** Domínio de **Condições Aninhadas** e **Estruturas de Repetição** (`for` e `while`).
+* **[Mundo 3 - Estruturas Compostas](./Mundo_3):** (Em breve) Listas, dicionários, funções e módulos.
 
 ---
+
+### 🧠 Notas Técnicas
+
+* **Lógica de Fluxo:** Aplicação de condições aninhadas (`elif`) para decisões complexas.
+* **Automação:** Uso de laços de repetição para processar dados em massa.
+* **Performance:** Uso de métodos nativos (Slicing) para otimizar o código.
+* **Sanitização:** Tratamento de entradas do usuário para evitar erros de execução.
+
+---
+
+### 💻 Setup de Desenvolvimento
+* **Linguagem:** Python 3.x
+* **IDE:** VS Code
+* **Objetivo Atual:** Finalizar o estudo de repetições e iniciar o Mundo 3.
