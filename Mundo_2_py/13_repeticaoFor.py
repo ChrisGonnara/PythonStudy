@@ -1,4 +1,5 @@
 from time import sleep
+from datetime import date
 def exemplo01():
     for c in range(1,6, 2): #0 a 7 de 2 em 2
         print(c)
@@ -104,4 +105,63 @@ def ex53():
         print('Temos um PALÍNDROMO!')
     else:
         print('A frase digitada não é um palíndromo')
-ex53()
+
+def ex54():
+    atual=date.today().year
+    contmaior=0
+    contmenor=0
+
+    for c in range (1,8):
+        nasc=int(input(f'{c}: Ano de nascimento: '))
+        idade=atual-nasc
+        if idade >= 21:
+            contmaior +=1
+        else:
+            contmenor +=1
+    print(f'Teve {contmaior} pessoas maiores e {contmenor} menores')
+    
+
+def ex55():
+    pesomaior=0
+    pesomenor=0
+    
+    for c in range(1,6):
+        peso=float(input(f'{c}: Digite o peso: '))
+
+        if c == 1:
+            pesomaior=peso
+            pesomenor=peso
+        else:
+            if peso > pesomaior:
+                pesomaior = peso
+            if peso<pesomenor:
+                pesomenor=peso
+    print(f'O maior peso é {pesomaior}') 
+    print(f'O menor peso é {pesomenor}')
+
+def ex56():
+    somaidade=0
+    idadevelho=0
+    nomevelho=''
+    mulher20=0
+    for c in range(1,5):
+        nome=str(input(f'{c}: Digite seu nome: '))
+        idade=int(input(f': Digite sua idade: '))
+        sexo=str(input(f': Sexo [M/F]')).strip().upper()
+
+        somaidade+=idade
+
+        if sexo=='M' and c ==1:
+            idadevelho=idade
+            nomevelho=nome
+        if sexo == 'M' and idadevelho< idade:
+            idadevelho=idade
+            nomevelho=nome
+        if sexo =='F' and idade <=20:
+            mulher20 += 1
+    media=somaidade/4
+
+    print(f'A media de idade do grupo é {media} anos')
+    print(f'Nome mais velho {nomevelho}, idade {idadevelho}')
+    print(f'Ao todo são {mulher20} mulheres com menos de 20')
+ex56()
