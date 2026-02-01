@@ -24,4 +24,3 @@ Repositório focado no domínio da linguagem Python, evoluindo do básico até a
 ### 💻 Setup de Desenvolvimento
 * **Linguagem:** Python 3.x
 * **IDE:** VS Code
-* **Objetivo Atual:** Finalizar o estudo de repetições e iniciar o Mundo 3.
