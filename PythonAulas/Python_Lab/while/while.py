@@ -88,4 +88,102 @@ def ex07():
     print(f'maior: {maior}')
     print(f'menor {menor}')
 
-ex07()
+
+#soma ate valor de parada
+def ex08():
+    n=''
+    soma=0
+    while n != 0:
+        n=int(input('numero: '))
+        soma +=n
+    print(f'Soma: {soma}')
+
+
+def ex09():
+    valor=''
+    i=0
+    soma=0
+
+    while valor !=0:
+        valor=float(input('Valor da venda: '))
+        soma +=valor
+        i +=1
+    media = soma / i
+
+    print(f'Valor vendido no dia: {soma}')
+    print(f'numero vendas: {i}')
+    print(f'valor medio: {media:.2f}')
+
+
+def ex10():
+    temperatura = int(input('Temperatura: '))
+
+    if temperatura == -1:
+        print('nenhuma temperatura registrtada.')
+        return
+
+    i=1  #qtd temperaturas
+    j=0 #qtd acima de 80
+    maior = temperatura
+    menor = temperatura
+    soma = 0
+    media=0
+
+    while temperatura != -1:
+        i+=1
+        soma += temperatura
+
+        if temperatura > maior:
+            maior = temperatura
+        if temperatura < menor:
+            menor = temperatura
+
+        if temperatura > 80:
+            j+=1
+
+        temperatura =float(input(' [-1 sair] Temperatura: '))
+
+
+    media = soma / i
+
+    print(f'temperaturas registradas : {i}')
+    print(f'menor : {menor}')
+    print(f'maior: {maior}')
+    print (f'media: {media}')
+    print(f'acima de 80: {j}')
+
+
+
+#tabuada 1 a 9 
+
+def ex11():
+    for i in range (1,11):
+        print(f'Tabuada do {i}')
+
+        for j in range (1,10):
+            print(f'{i} x {j} = {i * j}')
+        print('-'*10)
+
+
+#retangulo de simbolos
+def ex12():
+    linhas=int(input('linhas: '))
+    colunas=int(input('colunas'))
+
+    for l in range (linhas):
+        print ('*' * colunas)
+
+
+def ex13():
+    #triangulo de numeros
+    n=int(input('numero: '))
+
+    for l in range (1,n+1):
+        linha=''
+
+        for c in range (1,l+1):
+           linha += str(c)
+
+        print (linha)
+
+ex13()
