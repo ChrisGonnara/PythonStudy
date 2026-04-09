@@ -231,6 +231,7 @@ def ex11():
 
 def ex12():
     somar,parimpar,dobro,invalido = 0,0,0,0
+
     print('\n1- Somar 2 numeros | 2- Par/Impar | 3- Dobro | 4- Sair')
     op = int(input('Escolha opção: '))
 
@@ -263,7 +264,6 @@ def ex12():
         op = int(input('Escolha opção: '))
     
     print(f'Opção 1 : {somar}\t  | Opção 2: {parimpar}')
-    print(f'Opção 3: {dobro}\t  |Opção invalida: {invalido}')
-    
+    print(f'Opção 3: {dobro}\t  |Opção invalida: {invalido}')    
 
 ex11()

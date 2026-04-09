@@ -1,39 +1,33 @@
 # 1 a 10
 def ex01():
-    i=0
+    i=1
     while i <=10:
-        print (i)
-        i+= 1
-
+        print(i)
+        i+=1
 
 #10 a 1
 def ex02():
     i=10
     while i >=1:
-        print (i)
+        print(i)
         i-=1
-
 
 #soma de 1 ate n
 def ex03():
-    n=int(input('Digito: '))
+    n=int(input('numero: '))
     i=1
-    soma = 0
-
+    soma=0
     while i <=n:
-        soma +=i
+        soma+=i
         i+=1
-    print(soma)
-
+    print(f' soma de 1 ate {n} = {soma}')
 
 # tabuada de um numero
 def ex04():
-    n=int(input('Digito: '))
-    i = 1
-
-    while i <=10:
-        resultado = n * i
-        print (f'{n} x {i} = {resultado}')
+    n=int(input('numeroo: '))
+    i=1
+    while i<=10:
+        print(f'{n} X {i} = {n * i}')
         i+=1
 
 
@@ -41,11 +35,13 @@ def ex04():
 def ex05():
     soma = 0
     i=1
+    
     while i <=5:
-        nota = float(input(f'{i} nota: '))
-        soma += nota
+        nota=float(input(f'{i} nota:'))
+        soma+=nota
         i+=1
-    media = soma / 5
+    
+    media = soma/5
     print(f'media das 5 notas: {media:.2f}')
 
 
@@ -186,4 +182,4 @@ def ex13():
 
         print (linha)
 
-ex13()
+ex04()
